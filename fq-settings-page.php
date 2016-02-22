@@ -17,7 +17,7 @@ if ( !class_exists('FQ_Settings') ) {
 	class FQ_Settings {
 
 
-		public $parent_slug = 'options-general.php';
+		public $parent_slug = 'options-general.php'; // set to false for top menu
 
 		public $page_title = 'My Settings';
 
