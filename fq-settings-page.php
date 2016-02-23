@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: FQ Settings
- * Plugin URI: https://github.com/figoliquinn/fq-plugin-template
+ * Plugin URI: http://figoliquinn.github.io/fq-settings-page/
  * Description: A light-weight settings page tool.
  * Version: 1.0.0
  * Author: Bob Passaro & Tony Figoli
