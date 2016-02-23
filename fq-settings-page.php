@@ -1,13 +1,19 @@
 <?php
 /**
  * Plugin Name: FQ Settings
- * Plugin URI: http://figoliquinn.com
+ * Plugin URI: https://github.com/figoliquinn/fq-plugin-template
  * Description: A light-weight settings page tool.
  * Version: 1.0.0
  * Author: Bob Passaro & Tony Figoli
  * Author URI: http://figoliquinn.com
  * License: GPL2
 */
+
+
+
+
+
+
 
 
 
@@ -39,6 +45,7 @@ if ( !class_exists('FQ_Settings') ) {
 
 		function __construct() {
 
+
 			add_action('admin_menu', array($this,'create') );
 			add_action('admin_enqueue_scripts', array($this,'media_admin_scripts') );
 
@@ -46,6 +53,8 @@ if ( !class_exists('FQ_Settings') ) {
 
 		function create() {
 		
+			if(!$this->settings) return;
+			
 			// add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
 			// add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function );
 
